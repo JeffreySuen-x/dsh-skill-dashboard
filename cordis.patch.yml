@@ -2,4 +2,4 @@
 # client 半由 @deepseek-ai/dsh-client-modules 按 dsh.client 声明自动发现，无需在此列行。
 - insert:
     - id: skill-dashboard
-      name: 'dsh-skill-dashboard'
+      name: 'skill-dashboard'

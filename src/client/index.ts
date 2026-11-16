@@ -29,7 +29,7 @@ export async function apply(ctx: Context): Promise<void> {
           name: 'sidebar.panellist',
           id: 'skills',
           order: -10,
-          label: () => '技能',
+          label: () => '技能管理',
         },
         SkillIcon,
       ),

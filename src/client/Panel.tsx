@@ -174,11 +174,11 @@ function WorkspacePanel({
   }
   return (
     <div className={css.surface}>
-    <main ref={pageRef} className={css.page} aria-label={showAll ? '全部技能' : '技能'}>
+    <main ref={pageRef} className={css.page} aria-label={showAll ? '全部技能' : '技能管理'}>
       {showAll ? (
         <header className={css.allHeader}>
           <div className={css.backTitle}>
-            <Button ref={backRef} variant="ghost" size="sm" aria-label="返回技能" icon={<IconChevronLeftOutlineRegular />}
+            <Button ref={backRef} variant="ghost" size="sm" aria-label="返回技能管理" icon={<IconChevronLeftOutlineRegular />}
               onClick={() => setShowAll(false)} />
             <h1>全部技能</h1>
           </div>
@@ -188,7 +188,7 @@ function WorkspacePanel({
       ) : <>
       <header className={css.header}>
         <div>
-          <h1>技能</h1>
+          <h1>技能管理</h1>
           <p>浏览、安装和管理你的技能</p>
         </div>
         {tab === 'installed' ? <div className={css.actions}>
@@ -226,7 +226,7 @@ function WorkspacePanel({
           items={tabs}
           value={tab}
           onChange={setTab}
-          label="技能页面"
+          label="技能管理页面"
           className={css.primaryTabs}
         />
       </div>

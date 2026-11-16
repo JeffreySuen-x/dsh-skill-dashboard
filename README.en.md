@@ -1,8 +1,8 @@
-# DSH Skill Dashboard
+# skill-dashboard
 
 [中文](README.md) | **English**
 
-`dsh-skill-dashboard`
+`skill-dashboard`
 
 A plugin for DSH 0.2.2-rc.3 focused on **discovering, installing, and enabling or disabling skills**. MIT licensed.
 
@@ -16,16 +16,16 @@ A plugin for DSH 0.2.2-rc.3 focused on **discovering, installing, and enabling o
 Enter the path to the Release `.tgz` file in DSH's **Plugins → Add plugin** dialog, or run:
 
 ```sh
-dsh plugin --profile desktop add ./dsh-skill-dashboard-0.5.2.tgz
+dsh plugin --profile desktop add ./skill-dashboard-0.5.3.tgz
 ```
 
 Requires DSH `0.2.2-rc.3` and Node.js `^22.19.0 || >=24.0.0`. Verified on macOS; other platforms have not been tested.
 
-Upgrading from `dsh-skill-dossier`: uninstall the old package from DSH's plugin page before installing this package to avoid duplicate registrations. Skill files and configuration paths remain unchanged.
+Upgrading from `dsh-skill-dossier` or `dsh-skill-dashboard`: uninstall the old package from DSH's plugin page before installing this package to avoid duplicate registrations. Skill files and configuration paths remain unchanged.
 
 ## Usage
 
-Open **Skills (技能)** in the sidebar to manage local skills. The dropdown beside **Add skill (添加技能)** opens the folder library. Folders use the `<name>/SKILL.md` structure. Removing a folder unregisters it without deleting its files.
+Open **skill-dashboard (技能管理)** in the sidebar to manage local skills. The dropdown beside **Add skill (添加技能)** opens the folder library. Folders use the `<name>/SKILL.md` structure. Removing a folder unregisters it without deleting its files.
 
 Automatic discovery checks common user directories every 30 seconds, respects `CODEX_HOME` and `CLAUDE_CONFIG_DIR`, and deduplicates resolved paths. It does not scan the entire disk. DSH handles parsing, watching, and on-demand AI loading; discovery makes no model calls.
 

@@ -1,7 +1,7 @@
 {
-  "name": "dsh-skill-dashboard",
-  "description": "DSH Skill Dashboard — discover, install, and enable or disable skills with native DSH services.",
-  "version": "0.5.2",
+  "name": "skill-dashboard",
+  "description": "Discover, install, and enable or disable skills with native DSH services.",
+  "version": "0.5.3",
   "packageManager": "pnpm@11.7.0",
   "type": "module",
   "main": "lib/index.js",
@@ -12,7 +12,8 @@
     "./client": {
       "default": "./lib/client.js"
     },
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
   },
   "dsh": {
     "client": {
@@ -94,6 +95,7 @@
     "indexes/skills.json",
     "NOTICE.md",
     "README.md",
-    "README.en.md"
+    "README.en.md",
+    "locale/*.json"
   ]
 }

@@ -21,7 +21,7 @@ export interface SkillDetail extends SkillSummaryView {
   path: string | null
 }
 
-export const PACKAGE = 'dsh-skill-dashboard'
+export const PACKAGE = 'skill-dashboard'
 export const NAMESPACE = 'skillDossier'
 export const INDEX_PATH = '/api/skill-dossier/index.json'
 const fields = {
