@@ -1,0 +1,23 @@
+{
+  "format": 1,
+  "title": "技能索引",
+  "description": "可通过 DSH 原生安装器安装的技能包。可复制此文件，添加你自己的 npm 或固定 Git 提交。",
+  "metadata": {
+    "categories": { "skills": { "title": "技能" } },
+    "labels": { "official": { "title": "DSH 官方" }, "experimental": { "title": "实验性" } }
+  },
+  "plugins": [{
+    "name": "@deepseek-ai/dsh-experimental-badge-skill-bundle",
+    "title": "徽章技能",
+    "description": "DSH 官方实验性徽章技能包。",
+    "author": "DeepSeek",
+    "repository": { "url": "https://github.com/deepseek-ai/deepseek-harness", "directory": "packages/experimental/badge-skill-bundle" },
+    "metadata": { "category": "skills", "labels": ["official", "experimental"], "keywords": ["skill", "badge"] },
+    "versions": [{
+      "version": "0.2.2-rc.3",
+      "publishTimestamp": 1794556474,
+      "source": { "type": "npm", "registry": "https://registry.npmjs.org" },
+      "engines": { "dsh": "0.2.2-rc.3" }
+    }]
+  }]
+}
